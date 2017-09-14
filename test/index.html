@@ -1,0 +1,24 @@
+<head>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <title>Mocha Spec Runner</title>
+    <link rel="stylesheet" href="bower_components/mocha/mocha.css">
+</head>
+<body ng-app="StudentCrudApp">
+    <div id="mocha">
+        <script src="bower_components/mocha/mocha.js"></script>
+        <script src="bower_components/chai/chai.js"></script>
+        <script>
+            mocha.setup('bdd')
+        </script>
+        <script type="text/javascript" src="bower_components/angular-mocks/angular-mocks.js"></script>
+        <script src="//sinonjs.org/releases/sinon-1.12.2.js"></script>
+    </div>
+    <script src="main.js"></script>
+    <script src="student/service.js"></script>
+    <script src="student/controller.js"></script>
+    <script src="directives/showError.js"></script>
+    <script src="main.spec.js"></script>
+    <script>
+        mocha.run();
+    </script>
+</body>
